@@ -7,6 +7,7 @@ export function WaitlistForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [focusedField, setFocusedField] = useState<string | null>(null)
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const sectionRef = useRef<HTMLElement>(null)
 
   const [formData, setFormData] = useState({
@@ -35,9 +36,28 @@ export function WaitlistForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    setErrorMessage(null)
+
+    try {
+      const res = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await res.json()
+
+      if (!res.ok) {
+        setErrorMessage(data.error || "Qualcosa è andato storto.")
+        return
+      }
+
+      setIsSubmitted(true)
+    } catch {
+      setErrorMessage("Errore di rete. Riprova.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -218,6 +238,11 @@ export function WaitlistForm() {
                     </span>
                   )}
                 </button>
+
+                {/* Errore */}
+                {errorMessage && (
+                  <p className="mt-4 text-center text-sm text-red-400">{errorMessage}</p>
+                )}
 
                 {/* Counter */}
                 <div className="mt-8 flex items-center justify-center gap-6">
