@@ -8,14 +8,14 @@ const pillars = [
     number: "01",
     title: "Pelle Toscana",
     subtitle: "Conciata al vegetale",
-    description: "Selezioniamo solo il 3% della produzione delle migliori concerie toscane. Una pelle che respira, si ammorbidisce e sviluppa una patina unica nel tempo.",
+    description: "I nostri fornitori selezionano solo il 3% della produzione delle migliori concerie toscane. Una pelle che respira, si ammorbidisce e sviluppa una patina unica nel tempo.",
     image: "https://images.pexels.com/photos/5462330/pexels-photo-5462330.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   {
     number: "02",
-    title: "Ottone Massiccio",
-    subtitle: "Finitura anticata",
-    description: "Fibbie forgiate da un&apos;unica fusione, non stampate. Ogni pezzo è lucidato a mano e trattato per sviluppare carattere con l&apos;uso.",
+    title: "Medaglietta personalizzata",
+    subtitle: "La modernità",
+    description: "La chiusura è il nostro marchio di fabbrica. Progettata per intero da noi, è in grado di sganciarsi automaticamente se subisce strattoni, manon finisce qui. Su ogni medaglietta è inciso su una lamiera in acciaio INOX un codice QR, compatibile con il sito Petfound.",
     image: "https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&w=1200"
   },
   {
