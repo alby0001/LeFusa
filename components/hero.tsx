@@ -162,7 +162,7 @@ export function Hero() {
               Materiali
             </span>
             <span className="block font-serif text-sm text-foreground">
-              Pelle toscana · Ottone massiccio
+              Pelle toscana · Medaglietta personalizzata
             </span>
           </div>
 
