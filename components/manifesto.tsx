@@ -117,7 +117,7 @@ export function Manifesto() {
               </p>
               <div className="pt-4">
                 <span className="text-[10px] tracking-[0.2em] uppercase text-foreground/60">
-                  — Fondatori, LE FUSA
+                  — Alberto, LE FUSA
                 </span>
               </div>
             </div>
