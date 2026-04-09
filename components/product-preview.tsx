@@ -9,21 +9,21 @@ const products = [
     alt: "Gatto elegante con collare",
     name: "Il Classico",
     material: "Pelle naturale",
-    price: "€180"
+    price: "€30"
   },
   {
     src: "https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&w=1200",
     alt: "Dettaglio pelle lavorata",
     name: "Il Raffinato",
-    material: "Pelle invecchiata",
-    price: "€220"
+    material: "Fibia a sgancio automatico",
+    price: "€30"
   },
   {
     src: "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1200",
     alt: "Gatto con collare premium",
-    name: "L&apos;Esclusivo",
-    material: "Edizione limitata",
-    price: "€340"
+    name: "L &apos;Esclusivo",
+    material: "Medaglietta personalizzata ",
+    price: "€30"
   }
 ]
 
@@ -158,7 +158,7 @@ export function ProductPreview() {
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
             <span className="text-[11px] tracking-[0.15em] uppercase">
-              Spedizione assicurata in tutto il mondo
+              Spedizione assicurata in tutta Italia
             </span>
           </div>
         </div>
