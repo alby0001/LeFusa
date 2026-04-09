@@ -125,8 +125,7 @@ export function WaitlistForm() {
                 {[
                   "Accesso 48h prima del lancio pubblico",
                   "Sconto esclusivo del 15% sul primo ordine",
-                  "Possibilità di incisione personalizzata",
-                  "Invito agli eventi riservati"
+                  "Possibilità di incisione personalizzata"
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center gap-4">
                     <div className="w-5 h-px bg-background/30" />
